@@ -109,34 +109,41 @@
             <h2 class="text-white text-center mb-40" style="color: #ffffff; font-size: 2.2rem;">Want to Collaborate?
             </h2>
 
-            <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                
+                <input type="hidden" name="access_key" value="8c1844bc-c724-4075-92d6-4826edba03bb">
+                <input type="hidden" name="subject" value="New Entry: Simple Contact Form">
+                <input type="hidden" name="from_name" value="YNot Innovators">
+                <input type="hidden" name="ccemail" value="jeny@ynotinnovators.com; connorl@2i-labs.com">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                 <div class="form-row">
                     <div class="form-group half-width">
                         <label>Name <span class="req">*</span></label>
-                        <input type="text" name="first_name" required>
+                        <input type="text" name="First Name" required>
                         <span class="sub-label">First</span>
                     </div>
                     <div class="form-group half-width">
                         <label>&nbsp;</label>
-                        <input type="text" name="last_name" required>
+                        <input type="text" name="Last Name" required>
                         <span class="sub-label">Last</span>
                     </div>
                 </div>
                 <div class="form-group">
                     <label>Organization Name <span class="req">*</span></label>
-                    <input type="text" name="organization" required>
+                    <input type="text" name="Organization" required>
                 </div>
                 <div class="form-group">
                     <label>Email <span class="req">*</span></label>
-                    <input type="email" name="_replyto" required>
+                    <input type="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label>Phone Number <span class="req">*</span></label>
-                    <input type="tel" name="phone" required>
+                    <input type="tel" name="Phone" required>
                 </div>
                 <div class="form-group">
                     <label>Comment or Message <span class="req">*</span></label>
-                    <textarea name="message" rows="6" required></textarea>
+                    <textarea name="Message" rows="6" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-submit">Submit</button>
             </form>
